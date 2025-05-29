@@ -65,7 +65,8 @@ class Menu:
                 # Position, initial course and speed queries
                 nav_data_dict['position'] = position_input()
                 nav_data_dict['gps_heading'] = heading_input()
-                nav_data_dict['gps_speed'] = speed_input()
+                # nav_data_dict['gps_speed'] = speed_input()
+                nav_data_dict['gps_speed'] = 0.0  # Set initial speed to 0.0
 
                 # Initialize NmeaMsg object
                 self.nmea_obj = NmeaMsg(position=nav_data_dict['position'],
